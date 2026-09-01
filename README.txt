@@ -1,7 +1,6 @@
 htensor_nonnegative
 
-This repository contains code for a multiplicative update algorithm to compute the nonnegative hierarchical Tucker decomposition (NHTD).
-Examples demonstrating the application of the code to data are available in the ITPC and chicago_crime folders. The following MATLAB toolboxes were used:
+This repository contains code for a multiplicative update algorithm to compute the nonnegative hierarchical Tucker decomposition (NHTD). Examples demonstrating the application of the code to data are available in the ITPC and chicago_crime folders. The following MATLAB toolboxes were used:
 
   - EEGLAB, Version 2026.0.0
   - Hierarchical Tucker Toolbox, Version 1.3
