@@ -1,0 +1,522 @@
+readdata
+%% Import data from text file
+diary on
+echo on
+fprintf('\n*** Data Import: Converting from CVS to MATLAB Table***\n')
+
+*** Data Import: Converting from CVS to MATLAB Table***
+
+%% Read file
+fname = "Chicago_Crime_2022-10-25.csv";
+fprintf('Reading file: %s\n',fname)
+Reading file: Chicago_Crime_2022-10-25.csv
+tic
+% Set up the Import Options and import the data
+opts = delimitedTextImportOptions("NumVariables", 22);
+
+% Specify range and delimiter
+opts.DataLines = [1, Inf];
+opts.Delimiter = ",";
+
+% Specify column names and types
+opts.VariableNames = ["Var1", "Var2", "Date", "Var4", "Var5", "PrimaryType", "Var7", "LocationDescription", "Var9", "Var10", "Var11", "Var12", "Var13", "CommunityArea", "Var15", "Var16", "Var17", "Var18", "Var19", "Var20", "Var21", "Var22"];
+opts.SelectedVariableNames = ["Date", "PrimaryType", "CommunityArea"];
+opts.VariableTypes = ["string", "string", "datetime", "string", "string", "categorical", "string", "categorical", "string", "string", "string", "string", "string", "double", "string", "string", "string", "string", "string", "string", "string", "string"];
+
+% Specify file level properties
+opts.ExtraColumnsRule = "ignore";
+opts.EmptyLineRule = "read";
+
+% Specify variable properties
+opts = setvaropts(opts, ["Var1", "Var2", "Var4", "Var5", "Var7", "Var9", "Var10", "Var11", "Var12", "Var13", "Var15", "Var16", "Var17", "Var18", "Var19", "Var20", "Var21", "Var22"], "WhitespaceRule", "preserve");
+opts = setvaropts(opts, ["Var1", "Var2", "Var4", "Var5", "PrimaryType", "Var7", "LocationDescription", "Var9", "Var10", "Var11", "Var12", "Var13", "Var15", "Var16", "Var17", "Var18", "Var19", "Var20", "Var21", "Var22"], "EmptyFieldRule", "auto");
+opts = setvaropts(opts, "Date", "InputFormat", "MM/dd/yyyy hh:mm:ss aa");
+
+% Import the data
+T = readtable(fname, opts);
+
+% Clean up
+clear opts;
+toc
+Elapsed time is 98.410781 seconds.
+%% Summarize
+fprintf('Created table T with %d rows and %d columns\n', size(T));
+Created table T with 7655983 rows and 3 columns
+summary(T)
+
+Variables:
+
+    <strong>Date</strong>: 7655983×1 datetime
+
+        Values:
+
+            Min             01/01/2001 12:00:00 AM  
+            Median          05/17/2009 05:11:00 PM  
+            Max             10/17/2022 11:59:00 PM  
+            NumMissing      1                       
+
+    <strong>PrimaryType</strong>: 7655983×1 categorical
+
+        Values:
+
+            ARSON                                     13039
+            ASSAULT                              4.9693e+05
+            BATTERY                              1.4029e+06
+            BURGLARY                             4.2051e+05
+            CONCEALED CARRY LICENSE VIOLATION           982
+            CRIM SEXUAL ASSAULT                       27700
+            CRIMINAL DAMAGE                      8.7278e+05
+            CRIMINAL SEXUAL ASSAULT                    5795
+            CRIMINAL TRESPASS                    2.1201e+05
+            DECEPTIVE PRACTICE                   3.3518e+05
+            DOMESTIC VIOLENCE                             1
+            GAMBLING                                  14616
+            HOMICIDE                                  12233
+            HUMAN TRAFFICKING                            97
+            INTERFERENCE WITH PUBLIC OFFICER          18143
+            INTIMIDATION                               4534
+            KIDNAPPING                                 7157
+            LIQUOR LAW VIOLATION                      14804
+            MOTOR VEHICLE THEFT                  3.5931e+05
+            NARCOTICS                            7.4428e+05
+            NON - CRIMINAL                               38
+            NON-CRIMINAL                                179
+            NON-CRIMINAL (SUBJECT SPECIFIED)              9
+            OBSCENITY                                   790
+            OFFENSE INVOLVING CHILDREN                54589
+            OTHER NARCOTIC VIOLATION                    145
+            OTHER OFFENSE                        4.7605e+05
+            PROSTITUTION                              69713
+            PUBLIC INDECENCY                            192
+            PUBLIC PEACE VIOLATION                    51948
+            Primary Type                                  1
+            RITUALISM                                    24
+            ROBBERY                              2.8751e+05
+            SEX OFFENSE                               30003
+            STALKING                                   4538
+            THEFT                                1.6149e+06
+            WEAPONS VIOLATION                    1.0236e+05
+
+    <strong>CommunityArea</strong>: 7655983×1 double
+
+        Values:
+
+            Min             0       
+            Median          32      
+            Max             77      
+            NumMissing      613477  
+
+%% Cleaning up initial table
+
+% Remove invalid dates
+badrows = isnat(T.Date);
+T(badrows,:) = [];
+fprintf('Removed %d bad dates\n', sum(badrows));
+Removed 1 bad dates
+
+% Remove invalid community areas
+badrows = isnan(T.CommunityArea);
+T(badrows,:) = [];
+fprintf('Removed %d bad community areas (missing)\n', sum(badrows));
+Removed 613476 bad community areas (missing)
+
+% Removing more invalid community areas
+badrows = (T.CommunityArea == 0);
+T(badrows,:) = [];
+fprintf('Removed %d bad community areas (invalid)\n', sum(badrows));
+Removed 76 bad community areas (invalid)
+
+fprintf('Updated table T now has %d rows and %d columns\n', size(T));
+Updated table T now has 7042430 rows and 3 columns
+summary(T)
+
+Variables:
+
+    <strong>Date</strong>: 7042430×1 datetime
+
+        Values:
+
+            Min       01/01/2001 12:00:00 AM
+            Median    03/04/2010 03:00:00 AM
+            Max       10/17/2022 11:59:00 PM
+
+    <strong>PrimaryType</strong>: 7042430×1 categorical
+
+        Values:
+
+            ARSON                                     11722
+            ASSAULT                              4.5711e+05
+            BATTERY                              1.2845e+06
+            BURGLARY                             3.8795e+05
+            CONCEALED CARRY LICENSE VIOLATION           982
+            CRIM SEXUAL ASSAULT                       25634
+            CRIMINAL DAMAGE                      8.0125e+05
+            CRIMINAL SEXUAL ASSAULT                    5781
+            CRIMINAL TRESPASS                    1.9477e+05
+            DECEPTIVE PRACTICE                   3.1756e+05
+            DOMESTIC VIOLENCE                             0
+            GAMBLING                                  13492
+            HOMICIDE                                  11853
+            HUMAN TRAFFICKING                            97
+            INTERFERENCE WITH PUBLIC OFFICER          17637
+            INTIMIDATION                               4168
+            KIDNAPPING                                 5980
+            LIQUOR LAW VIOLATION                      12786
+            MOTOR VEHICLE THEFT                  3.2656e+05
+            NARCOTICS                            6.7696e+05
+            NON - CRIMINAL                               38
+            NON-CRIMINAL                                179
+            NON-CRIMINAL (SUBJECT SPECIFIED)              9
+            OBSCENITY                                   764
+            OFFENSE INVOLVING CHILDREN                52016
+            OTHER NARCOTIC VIOLATION                    136
+            OTHER OFFENSE                        4.3645e+05
+            PROSTITUTION                              61697
+            PUBLIC INDECENCY                            180
+            PUBLIC PEACE VIOLATION                    48542
+            Primary Type                                  0
+            RITUALISM                                    16
+            ROBBERY                              2.6424e+05
+            SEX OFFENSE                               27446
+            STALKING                                   4276
+            THEFT                                1.4928e+06
+            WEAPONS VIOLATION                         96852
+
+    <strong>CommunityArea</strong>: 7042430×1 double
+
+        Values:
+
+            Min           1   
+            Median       32   
+            Max          77   
+
+%% Create 'hourcat' column
+fprintf('Extracting hours...\n')
+Extracting hours...
+tic
+hour = datestr(T.Date,'HH');
+toc
+Elapsed time is 161.872966 seconds.
+fprintf('Converting to categorical...\n')
+Converting to categorical...
+tic
+hourcat = categorical(cellstr(hour(1:end,:)));
+toc
+Elapsed time is 15.365438 seconds.
+summary(hourcat)
+     <strong>00</strong>      403864 
+     <strong>01</strong>      222857 
+     <strong>02</strong>      188133 
+     <strong>03</strong>      152369 
+     <strong>04</strong>      115611 
+     <strong>05</strong>       96702 
+     <strong>06</strong>      113815 
+     <strong>07</strong>      161832 
+     <strong>08</strong>      239421 
+     <strong>09</strong>      307060 
+     <strong>10</strong>      298768 
+     <strong>11</strong>      312695 
+     <strong>12</strong>      405237 
+     <strong>13</strong>      334292 
+     <strong>14</strong>      354974 
+     <strong>15</strong>      374865 
+     <strong>16</strong>      354778 
+     <strong>17</strong>      360329 
+     <strong>18</strong>      383111 
+     <strong>19</strong>      396024 
+     <strong>20</strong>      394105 
+     <strong>21</strong>      382423 
+     <strong>22</strong>      376340 
+     <strong>23</strong>      312825 
+T = [T, table(hourcat)];
+clear hourcat hour
+fprintf('Updated table T now has %d rows and %d columns\n', size(T));
+Updated table T now has 7042430 rows and 4 columns
+summary(T)
+
+Variables:
+
+    <strong>Date</strong>: 7042430×1 datetime
+
+        Values:
+
+            Min       01/01/2001 12:00:00 AM
+            Median    03/04/2010 03:00:00 AM
+            Max       10/17/2022 11:59:00 PM
+
+    <strong>PrimaryType</strong>: 7042430×1 categorical
+
+        Values:
+
+            ARSON                                     11722
+            ASSAULT                              4.5711e+05
+            BATTERY                              1.2845e+06
+            BURGLARY                             3.8795e+05
+            CONCEALED CARRY LICENSE VIOLATION           982
+            CRIM SEXUAL ASSAULT                       25634
+            CRIMINAL DAMAGE                      8.0125e+05
+            CRIMINAL SEXUAL ASSAULT                    5781
+            CRIMINAL TRESPASS                    1.9477e+05
+            DECEPTIVE PRACTICE                   3.1756e+05
+            DOMESTIC VIOLENCE                             0
+            GAMBLING                                  13492
+            HOMICIDE                                  11853
+            HUMAN TRAFFICKING                            97
+            INTERFERENCE WITH PUBLIC OFFICER          17637
+            INTIMIDATION                               4168
+            KIDNAPPING                                 5980
+            LIQUOR LAW VIOLATION                      12786
+            MOTOR VEHICLE THEFT                  3.2656e+05
+            NARCOTICS                            6.7696e+05
+            NON - CRIMINAL                               38
+            NON-CRIMINAL                                179
+            NON-CRIMINAL (SUBJECT SPECIFIED)              9
+            OBSCENITY                                   764
+            OFFENSE INVOLVING CHILDREN                52016
+            OTHER NARCOTIC VIOLATION                    136
+            OTHER OFFENSE                        4.3645e+05
+            PROSTITUTION                              61697
+            PUBLIC INDECENCY                            180
+            PUBLIC PEACE VIOLATION                    48542
+            Primary Type                                  0
+            RITUALISM                                    16
+            ROBBERY                              2.6424e+05
+            SEX OFFENSE                               27446
+            STALKING                                   4276
+            THEFT                                1.4928e+06
+            WEAPONS VIOLATION                         96852
+
+    <strong>CommunityArea</strong>: 7042430×1 double
+
+        Values:
+
+            Min           1   
+            Median       32   
+            Max          77   
+
+    <strong>hourcat</strong>: 7042430×1 categorical
+
+        Values:
+
+            00    4.0386e+05
+            01    2.2286e+05
+            02    1.8813e+05
+            03    1.5237e+05
+            04    1.1561e+05
+            05         96702
+            06    1.1382e+05
+            07    1.6183e+05
+            08    2.3942e+05
+            09    3.0706e+05
+            10    2.9877e+05
+            11     3.127e+05
+            12    4.0524e+05
+            13    3.3429e+05
+            14    3.5497e+05
+            15    3.7486e+05
+            16    3.5478e+05
+            17    3.6033e+05
+            18    3.8311e+05
+            19    3.9602e+05
+            20     3.941e+05
+            21    3.8242e+05
+            22    3.7634e+05
+            23    3.1282e+05
+
+%% Create 'datecat' column
+fprintf('Extracting dates...\n')
+Extracting dates...
+tic
+date = datestr(T.Date,'yyyy-mm-dd');
+toc
+Elapsed time is 236.175718 seconds.
+fprintf('Converting to categorical and adding to table...\n')
+Converting to categorical and adding to table...
+tic 
+datearray = cellstr(date(1:end,:));
+toc
+Elapsed time is 7.728931 seconds.
+datecat = categorical(datearray);
+T = [T, table(datecat)];
+clear datearray datecat date
+fprintf('Updated table T now has %d rows and %d columns\n', size(T));
+Updated table T now has 7042430 rows and 5 columns
+
+%% Remove original Date column
+fprintf('Removing original date column')
+Removing original date columnT = removevars(T,'Date');
+fprintf('Updated table T now has %d rows and %d columns\n', size(T));
+Updated table T now has 7042430 rows and 4 columns
+%% Rename new columns
+T = renamevars(T, ["hourcat","datecat"],["Hour","Date"]);
+
+%% Change CommunityArea to categorical
+T.CommunityArea = categorical(T.CommunityArea);
+
+%% Changing more names
+T = renamevars(T,"PrimaryType","Type");
+T = renamevars(T,"CommunityArea","Community");
+
+%% Summary after renaming some variables
+fprintf('Summary of first three tables (last omitted because too big!')
+Summary of first three tables (last omitted because too big!summary(T(:,1:3))
+
+Variables:
+
+    <strong>Type</strong>: 7042430×1 categorical
+
+        Values:
+
+            ARSON                                     11722
+            ASSAULT                              4.5711e+05
+            BATTERY                              1.2845e+06
+            BURGLARY                             3.8795e+05
+            CONCEALED CARRY LICENSE VIOLATION           982
+            CRIM SEXUAL ASSAULT                       25634
+            CRIMINAL DAMAGE                      8.0125e+05
+            CRIMINAL SEXUAL ASSAULT                    5781
+            CRIMINAL TRESPASS                    1.9477e+05
+            DECEPTIVE PRACTICE                   3.1756e+05
+            DOMESTIC VIOLENCE                             0
+            GAMBLING                                  13492
+            HOMICIDE                                  11853
+            HUMAN TRAFFICKING                            97
+            INTERFERENCE WITH PUBLIC OFFICER          17637
+            INTIMIDATION                               4168
+            KIDNAPPING                                 5980
+            LIQUOR LAW VIOLATION                      12786
+            MOTOR VEHICLE THEFT                  3.2656e+05
+            NARCOTICS                            6.7696e+05
+            NON - CRIMINAL                               38
+            NON-CRIMINAL                                179
+            NON-CRIMINAL (SUBJECT SPECIFIED)              9
+            OBSCENITY                                   764
+            OFFENSE INVOLVING CHILDREN                52016
+            OTHER NARCOTIC VIOLATION                    136
+            OTHER OFFENSE                        4.3645e+05
+            PROSTITUTION                              61697
+            PUBLIC INDECENCY                            180
+            PUBLIC PEACE VIOLATION                    48542
+            Primary Type                                  0
+            RITUALISM                                    16
+            ROBBERY                              2.6424e+05
+            SEX OFFENSE                               27446
+            STALKING                                   4276
+            THEFT                                1.4928e+06
+            WEAPONS VIOLATION                         96852
+
+    <strong>Community</strong>: 7042430×1 categorical
+
+        Values:
+
+            1     1.0858e+05
+            2          89713
+            3     1.0299e+05
+            4          50174
+            5          41546
+            6     1.4195e+05
+            7     1.0965e+05
+            8     2.4741e+05
+            9           6976
+            10         30614
+            11         28071
+            12         13009
+            13         23708
+            14         62902
+            15         89063
+            16         79360
+            17         43340
+            18         16745
+            19    1.2906e+05
+            20         42314
+            21         65311
+            22     1.459e+05
+            23    2.2058e+05
+            24    2.0625e+05
+            25    4.4212e+05
+            26    1.3334e+05
+            27    1.3219e+05
+            28    2.1179e+05
+            29    2.0619e+05
+            30    1.1843e+05
+            31         69006
+            32    1.7362e+05
+            33         54259
+            34         26617
+            35         78305
+            36         16040
+            37         23444
+            38         97375
+            39         40448
+            40         74551
+            41         45009
+            42    1.1307e+05
+            43    2.3198e+05
+            44    1.5469e+05
+            45         36114
+            46    1.2986e+05
+            47         10543
+            48         38449
+            49    1.8748e+05
+            50         28502
+            51         46304
+            52         34756
+            53    1.1542e+05
+            54         31719
+            55         15516
+            56         58007
+            57         25231
+            58         68009
+            59         28650
+            60         44968
+            61    1.4236e+05
+            62         27013
+            63         64203
+            64         27878
+            65         51743
+            66    1.7205e+05
+            67    2.0273e+05
+            68    1.8456e+05
+            69    1.7502e+05
+            70         63865
+            71    1.9974e+05
+            72         25544
+            73         83735
+            74         15820
+            75         56141
+            76         42554
+            77         70250
+
+    <strong>Hour</strong>: 7042430×1 categorical
+
+        Values:
+
+            00    4.0386e+05
+            01    2.2286e+05
+            02    1.8813e+05
+            03    1.5237e+05
+            04    1.1561e+05
+            05         96702
+            06    1.1382e+05
+            07    1.6183e+05
+            08    2.3942e+05
+            09    3.0706e+05
+            10    2.9877e+05
+            11     3.127e+05
+            12    4.0524e+05
+            13    3.3429e+05
+            14    3.5497e+05
+            15    3.7486e+05
+            16    3.5478e+05
+            17    3.6033e+05
+            18    3.8311e+05
+            19    3.9602e+05
+            20     3.941e+05
+            21    3.8242e+05
+            22    3.7634e+05
+            23    3.1282e+05
+
+
+%% 
+save("Chicago_Crime_2022-10-25_Table.mat",'T');
+diary off

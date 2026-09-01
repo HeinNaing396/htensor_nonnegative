@@ -1,0 +1,1436 @@
+
+*** Rank=1, Run=1, Seed=1749605794 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 1
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.461013e+05, ||grad||_infty = 3.84e+01
+Iter    33, f(x) = 9.461011e+05, ||grad||_infty = 2.67e+00
+End Main Loop
+
+Final objective: 9.4610e+05
+Setup time: 0.09 seconds
+Main loop time: 7.60 seconds
+Outer iterations: 33
+Total iterations: 80
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=2, Run=1, Seed=971010121 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 2
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.369393e+05, ||grad||_infty = 4.04e+03
+Iter    50, f(x) = 9.277302e+05, ||grad||_infty = 4.28e+03
+Iter    75, f(x) = 9.275389e+05, ||grad||_infty = 5.46e+03
+Iter    96, f(x) = 9.275373e+05, ||grad||_infty = 5.49e+03
+End Main Loop
+
+Final objective: 9.2754e+05
+Setup time: 0.06 seconds
+Main loop time: 26.05 seconds
+Outer iterations: 96
+Total iterations: 237
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=3, Run=1, Seed=714496337 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 3
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.226278e+05, ||grad||_infty = 4.17e+03
+Iter    50, f(x) = 9.197479e+05, ||grad||_infty = 5.71e+03
+Iter    75, f(x) = 9.193566e+05, ||grad||_infty = 5.96e+03
+Iter   100, f(x) = 9.192386e+05, ||grad||_infty = 6.20e+03
+Iter   125, f(x) = 9.192360e+05, ||grad||_infty = 6.20e+03
+Iter   135, f(x) = 9.192359e+05, ||grad||_infty = 6.20e+03
+End Main Loop
+
+Final objective: 9.1924e+05
+Setup time: 0.08 seconds
+Main loop time: 30.29 seconds
+Outer iterations: 135
+Total iterations: 302
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=4, Run=1, Seed=1802781609 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 4
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.362836e+05, ||grad||_infty = 2.27e+03
+Iter    50, f(x) = 9.212624e+05, ||grad||_infty = 5.50e+03
+Iter    75, f(x) = 9.156821e+05, ||grad||_infty = 4.88e+03
+Iter   100, f(x) = 9.150755e+05, ||grad||_infty = 4.47e+03
+Iter   125, f(x) = 9.148790e+05, ||grad||_infty = 4.28e+03
+Iter   150, f(x) = 9.146047e+05, ||grad||_infty = 4.38e+03
+Iter   175, f(x) = 9.145099e+05, ||grad||_infty = 4.27e+03
+Iter   200, f(x) = 9.144827e+05, ||grad||_infty = 4.33e+03
+Iter   225, f(x) = 9.144747e+05, ||grad||_infty = 4.46e+03
+Iter   250, f(x) = 9.144714e+05, ||grad||_infty = 4.51e+03
+Iter   275, f(x) = 9.144706e+05, ||grad||_infty = 4.54e+03
+Iter   300, f(x) = 9.144703e+05, ||grad||_infty = 4.55e+03
+Iter   308, f(x) = 9.144703e+05, ||grad||_infty = 4.55e+03
+End Main Loop
+
+Final objective: 9.1447e+05
+Setup time: 0.07 seconds
+Main loop time: 64.02 seconds
+Outer iterations: 308
+Total iterations: 659
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=5, Run=1, Seed=1450329435 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 5
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.283266e+05, ||grad||_infty = 4.04e+03
+Iter    50, f(x) = 9.162422e+05, ||grad||_infty = 5.06e+03
+Iter    75, f(x) = 9.148184e+05, ||grad||_infty = 6.95e+03
+Iter   100, f(x) = 9.143000e+05, ||grad||_infty = 4.31e+03
+Iter   125, f(x) = 9.133443e+05, ||grad||_infty = 3.62e+03
+Iter   150, f(x) = 9.126126e+05, ||grad||_infty = 2.82e+03
+Iter   175, f(x) = 9.124343e+05, ||grad||_infty = 1.79e+03
+Iter   200, f(x) = 9.123387e+05, ||grad||_infty = 1.75e+03
+Iter   225, f(x) = 9.121084e+05, ||grad||_infty = 1.62e+03
+Iter   250, f(x) = 9.116986e+05, ||grad||_infty = 2.44e+03
+Iter   275, f(x) = 9.115370e+05, ||grad||_infty = 2.98e+03
+Iter   300, f(x) = 9.114663e+05, ||grad||_infty = 3.06e+03
+Iter   325, f(x) = 9.114370e+05, ||grad||_infty = 3.01e+03
+Iter   350, f(x) = 9.114208e+05, ||grad||_infty = 3.13e+03
+Iter   375, f(x) = 9.114081e+05, ||grad||_infty = 3.31e+03
+Iter   400, f(x) = 9.114032e+05, ||grad||_infty = 3.45e+03
+Iter   425, f(x) = 9.114007e+05, ||grad||_infty = 3.54e+03
+Iter   450, f(x) = 9.113991e+05, ||grad||_infty = 3.61e+03
+Iter   475, f(x) = 9.113982e+05, ||grad||_infty = 3.65e+03
+Iter   500, f(x) = 9.113979e+05, ||grad||_infty = 3.66e+03
+End Main Loop
+
+Final objective: 9.1140e+05
+Setup time: 0.06 seconds
+Main loop time: 104.26 seconds
+Outer iterations: 500
+Total iterations: 1058
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=6, Run=1, Seed=772129836 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 6
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.194114e+05, ||grad||_infty = 3.71e+03
+Iter    50, f(x) = 9.155383e+05, ||grad||_infty = 1.70e+03
+Iter    75, f(x) = 9.122231e+05, ||grad||_infty = 2.22e+03
+Iter   100, f(x) = 9.114041e+05, ||grad||_infty = 1.77e+03
+Iter   125, f(x) = 9.111678e+05, ||grad||_infty = 1.47e+03
+Iter   150, f(x) = 9.106308e+05, ||grad||_infty = 1.50e+03
+Iter   175, f(x) = 9.101255e+05, ||grad||_infty = 8.85e+02
+Iter   200, f(x) = 9.097983e+05, ||grad||_infty = 1.07e+03
+Iter   225, f(x) = 9.097633e+05, ||grad||_infty = 1.78e+03
+Iter   250, f(x) = 9.097241e+05, ||grad||_infty = 5.64e+02
+Iter   275, f(x) = 9.097057e+05, ||grad||_infty = 5.75e+02
+Iter   300, f(x) = 9.097012e+05, ||grad||_infty = 5.69e+02
+Iter   325, f(x) = 9.096990e+05, ||grad||_infty = 5.68e+02
+Iter   350, f(x) = 9.096971e+05, ||grad||_infty = 5.67e+02
+Iter   375, f(x) = 9.096962e+05, ||grad||_infty = 5.67e+02
+Iter   400, f(x) = 9.096958e+05, ||grad||_infty = 5.66e+02
+Iter   409, f(x) = 9.096958e+05, ||grad||_infty = 5.67e+02
+End Main Loop
+
+Final objective: 9.0970e+05
+Setup time: 0.06 seconds
+Main loop time: 88.34 seconds
+Outer iterations: 409
+Total iterations: 879
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=7, Run=1, Seed=1049273000 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 7
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.161684e+05, ||grad||_infty = 3.76e+03
+Iter    50, f(x) = 9.118314e+05, ||grad||_infty = 3.75e+03
+Iter    75, f(x) = 9.099222e+05, ||grad||_infty = 3.70e+03
+Iter   100, f(x) = 9.094307e+05, ||grad||_infty = 3.79e+03
+Iter   125, f(x) = 9.090983e+05, ||grad||_infty = 3.35e+03
+Iter   150, f(x) = 9.089606e+05, ||grad||_infty = 2.86e+03
+Iter   175, f(x) = 9.088930e+05, ||grad||_infty = 2.44e+03
+Iter   200, f(x) = 9.088309e+05, ||grad||_infty = 1.53e+03
+Iter   225, f(x) = 9.087868e+05, ||grad||_infty = 1.41e+03
+Iter   250, f(x) = 9.087624e+05, ||grad||_infty = 1.56e+03
+Iter   275, f(x) = 9.087457e+05, ||grad||_infty = 1.72e+03
+Iter   300, f(x) = 9.087266e+05, ||grad||_infty = 1.65e+03
+Iter   325, f(x) = 9.087174e+05, ||grad||_infty = 1.72e+03
+Iter   350, f(x) = 9.087071e+05, ||grad||_infty = 1.73e+03
+Iter   375, f(x) = 9.086887e+05, ||grad||_infty = 1.88e+03
+Iter   400, f(x) = 9.086609e+05, ||grad||_infty = 1.83e+03
+Iter   425, f(x) = 9.084789e+05, ||grad||_infty = 1.62e+03
+Iter   450, f(x) = 9.081959e+05, ||grad||_infty = 2.01e+03
+Iter   475, f(x) = 9.080698e+05, ||grad||_infty = 1.09e+03
+Iter   500, f(x) = 9.080036e+05, ||grad||_infty = 6.42e+02
+End Main Loop
+
+Final objective: 9.0800e+05
+Setup time: 0.07 seconds
+Main loop time: 110.01 seconds
+Outer iterations: 500
+Total iterations: 1042
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=8, Run=1, Seed=409248302 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 8
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.160095e+05, ||grad||_infty = 1.69e+03
+Iter    50, f(x) = 9.098408e+05, ||grad||_infty = 9.79e+02
+Iter    75, f(x) = 9.091137e+05, ||grad||_infty = 9.30e+02
+Iter   100, f(x) = 9.086326e+05, ||grad||_infty = 6.41e+02
+Iter   125, f(x) = 9.079773e+05, ||grad||_infty = 3.04e+03
+Iter   150, f(x) = 9.076718e+05, ||grad||_infty = 1.08e+03
+Iter   175, f(x) = 9.075248e+05, ||grad||_infty = 5.21e+02
+Iter   200, f(x) = 9.074325e+05, ||grad||_infty = 6.67e+02
+Iter   225, f(x) = 9.073402e+05, ||grad||_infty = 8.73e+02
+Iter   250, f(x) = 9.072927e+05, ||grad||_infty = 1.17e+03
+Iter   275, f(x) = 9.072634e+05, ||grad||_infty = 1.22e+03
+Iter   300, f(x) = 9.072389e+05, ||grad||_infty = 1.34e+03
+Iter   325, f(x) = 9.072049e+05, ||grad||_infty = 1.38e+03
+Iter   350, f(x) = 9.071641e+05, ||grad||_infty = 1.41e+03
+Iter   375, f(x) = 9.071108e+05, ||grad||_infty = 1.06e+03
+Iter   400, f(x) = 9.070819e+05, ||grad||_infty = 9.58e+02
+Iter   425, f(x) = 9.070674e+05, ||grad||_infty = 7.77e+02
+Iter   450, f(x) = 9.070616e+05, ||grad||_infty = 6.62e+02
+Iter   475, f(x) = 9.070586e+05, ||grad||_infty = 6.20e+02
+Iter   500, f(x) = 9.070564e+05, ||grad||_infty = 6.36e+02
+End Main Loop
+
+Final objective: 9.0706e+05
+Setup time: 0.06 seconds
+Main loop time: 105.36 seconds
+Outer iterations: 500
+Total iterations: 1044
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=9, Run=1, Seed=1816261593 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 9
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.144498e+05, ||grad||_infty = 1.42e+03
+Iter    50, f(x) = 9.085562e+05, ||grad||_infty = 4.20e+03
+Iter    75, f(x) = 9.076305e+05, ||grad||_infty = 1.01e+03
+Iter   100, f(x) = 9.071232e+05, ||grad||_infty = 9.75e+02
+Iter   125, f(x) = 9.068645e+05, ||grad||_infty = 1.28e+03
+Iter   150, f(x) = 9.067385e+05, ||grad||_infty = 1.46e+03
+Iter   175, f(x) = 9.066411e+05, ||grad||_infty = 1.70e+03
+Iter   200, f(x) = 9.064813e+05, ||grad||_infty = 1.50e+03
+Iter   225, f(x) = 9.063732e+05, ||grad||_infty = 1.57e+03
+Iter   250, f(x) = 9.062786e+05, ||grad||_infty = 1.45e+03
+Iter   275, f(x) = 9.062093e+05, ||grad||_infty = 1.32e+03
+Iter   300, f(x) = 9.061730e+05, ||grad||_infty = 8.84e+02
+Iter   325, f(x) = 9.061554e+05, ||grad||_infty = 7.81e+02
+Iter   350, f(x) = 9.061466e+05, ||grad||_infty = 7.51e+02
+Iter   375, f(x) = 9.061353e+05, ||grad||_infty = 7.56e+02
+Iter   400, f(x) = 9.061117e+05, ||grad||_infty = 6.56e+02
+Iter   425, f(x) = 9.060942e+05, ||grad||_infty = 6.76e+02
+Iter   450, f(x) = 9.060850e+05, ||grad||_infty = 6.47e+02
+Iter   475, f(x) = 9.060813e+05, ||grad||_infty = 6.53e+02
+Iter   500, f(x) = 9.060790e+05, ||grad||_infty = 6.44e+02
+End Main Loop
+
+Final objective: 9.0608e+05
+Setup time: 0.07 seconds
+Main loop time: 124.67 seconds
+Outer iterations: 500
+Total iterations: 1105
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=10, Run=1, Seed=576479649 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 10
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.193791e+05, ||grad||_infty = 3.40e+03
+Iter    50, f(x) = 9.102987e+05, ||grad||_infty = 1.90e+03
+Iter    75, f(x) = 9.073580e+05, ||grad||_infty = 1.19e+03
+Iter   100, f(x) = 9.067099e+05, ||grad||_infty = 6.07e+02
+Iter   125, f(x) = 9.064434e+05, ||grad||_infty = 6.57e+02
+Iter   150, f(x) = 9.061925e+05, ||grad||_infty = 6.07e+02
+Iter   175, f(x) = 9.059584e+05, ||grad||_infty = 6.33e+02
+Iter   200, f(x) = 9.057785e+05, ||grad||_infty = 6.55e+02
+Iter   225, f(x) = 9.056944e+05, ||grad||_infty = 6.53e+02
+Iter   250, f(x) = 9.056149e+05, ||grad||_infty = 6.59e+02
+Iter   275, f(x) = 9.055761e+05, ||grad||_infty = 6.57e+02
+Iter   300, f(x) = 9.055569e+05, ||grad||_infty = 6.57e+02
+Iter   325, f(x) = 9.055404e+05, ||grad||_infty = 6.34e+02
+Iter   350, f(x) = 9.055244e+05, ||grad||_infty = 6.05e+02
+Iter   375, f(x) = 9.055159e+05, ||grad||_infty = 5.91e+02
+Iter   400, f(x) = 9.055107e+05, ||grad||_infty = 5.79e+02
+Iter   425, f(x) = 9.055064e+05, ||grad||_infty = 6.45e+02
+Iter   450, f(x) = 9.055030e+05, ||grad||_infty = 5.38e+02
+Iter   475, f(x) = 9.054962e+05, ||grad||_infty = 4.95e+02
+Iter   500, f(x) = 9.054867e+05, ||grad||_infty = 5.20e+02
+End Main Loop
+
+Final objective: 9.0549e+05
+Setup time: 0.06 seconds
+Main loop time: 102.23 seconds
+Outer iterations: 500
+Total iterations: 1028
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=11, Run=1, Seed=1776294415 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 11
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.136927e+05, ||grad||_infty = 3.46e+03
+Iter    50, f(x) = 9.083580e+05, ||grad||_infty = 9.47e+02
+Iter    75, f(x) = 9.072076e+05, ||grad||_infty = 1.48e+03
+Iter   100, f(x) = 9.066040e+05, ||grad||_infty = 6.05e+02
+Iter   125, f(x) = 9.060697e+05, ||grad||_infty = 6.41e+02
+Iter   150, f(x) = 9.056133e+05, ||grad||_infty = 8.77e+02
+Iter   175, f(x) = 9.053675e+05, ||grad||_infty = 6.03e+02
+Iter   200, f(x) = 9.052554e+05, ||grad||_infty = 1.43e+03
+Iter   225, f(x) = 9.051780e+05, ||grad||_infty = 1.91e+03
+Iter   250, f(x) = 9.051243e+05, ||grad||_infty = 7.80e+02
+Iter   275, f(x) = 9.050934e+05, ||grad||_infty = 6.33e+02
+Iter   300, f(x) = 9.050769e+05, ||grad||_infty = 6.44e+02
+Iter   325, f(x) = 9.050639e+05, ||grad||_infty = 6.42e+02
+Iter   350, f(x) = 9.050528e+05, ||grad||_infty = 6.51e+02
+Iter   375, f(x) = 9.050436e+05, ||grad||_infty = 6.45e+02
+Iter   400, f(x) = 9.050360e+05, ||grad||_infty = 6.31e+02
+Iter   425, f(x) = 9.050301e+05, ||grad||_infty = 6.25e+02
+Iter   450, f(x) = 9.050223e+05, ||grad||_infty = 6.24e+02
+Iter   475, f(x) = 9.050150e+05, ||grad||_infty = 6.10e+02
+Iter   500, f(x) = 9.050064e+05, ||grad||_infty = 5.77e+02
+End Main Loop
+
+Final objective: 9.0501e+05
+Setup time: 0.08 seconds
+Main loop time: 102.21 seconds
+Outer iterations: 500
+Total iterations: 1041
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=12, Run=1, Seed=156236420 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 12
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.130684e+05, ||grad||_infty = 3.02e+03
+Iter    50, f(x) = 9.077125e+05, ||grad||_infty = 1.88e+03
+Iter    75, f(x) = 9.059661e+05, ||grad||_infty = 4.10e+03
+Iter   100, f(x) = 9.053401e+05, ||grad||_infty = 1.55e+03
+Iter   125, f(x) = 9.050885e+05, ||grad||_infty = 4.47e+03
+Iter   150, f(x) = 9.049046e+05, ||grad||_infty = 1.62e+03
+Iter   175, f(x) = 9.047822e+05, ||grad||_infty = 1.47e+03
+Iter   200, f(x) = 9.046906e+05, ||grad||_infty = 1.50e+03
+Iter   225, f(x) = 9.046270e+05, ||grad||_infty = 1.47e+03
+Iter   250, f(x) = 9.045650e+05, ||grad||_infty = 1.27e+03
+Iter   275, f(x) = 9.044915e+05, ||grad||_infty = 1.06e+03
+Iter   300, f(x) = 9.044385e+05, ||grad||_infty = 9.53e+02
+Iter   325, f(x) = 9.044004e+05, ||grad||_infty = 9.29e+02
+Iter   350, f(x) = 9.043815e+05, ||grad||_infty = 8.66e+02
+Iter   375, f(x) = 9.043692e+05, ||grad||_infty = 8.88e+02
+Iter   400, f(x) = 9.043607e+05, ||grad||_infty = 8.36e+02
+Iter   425, f(x) = 9.043546e+05, ||grad||_infty = 8.77e+02
+Iter   450, f(x) = 9.043500e+05, ||grad||_infty = 9.12e+02
+Iter   475, f(x) = 9.043457e+05, ||grad||_infty = 8.46e+02
+Iter   500, f(x) = 9.043421e+05, ||grad||_infty = 8.23e+02
+End Main Loop
+
+Final objective: 9.0434e+05
+Setup time: 0.06 seconds
+Main loop time: 117.24 seconds
+Outer iterations: 500
+Total iterations: 1032
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=1, Run=2, Seed=690753182 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 1
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.461012e+05, ||grad||_infty = 3.23e+01
+Iter    33, f(x) = 9.461011e+05, ||grad||_infty = 6.70e+00
+End Main Loop
+
+Final objective: 9.4610e+05
+Setup time: 0.11 seconds
+Main loop time: 9.90 seconds
+Outer iterations: 33
+Total iterations: 80
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=2, Run=2, Seed=2111922674 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 2
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.317460e+05, ||grad||_infty = 3.93e+03
+Iter    50, f(x) = 9.275472e+05, ||grad||_infty = 5.37e+03
+Iter    75, f(x) = 9.275373e+05, ||grad||_infty = 5.62e+03
+Iter    83, f(x) = 9.275373e+05, ||grad||_infty = 5.61e+03
+End Main Loop
+
+Final objective: 9.2754e+05
+Setup time: 0.07 seconds
+Main loop time: 25.51 seconds
+Outer iterations: 83
+Total iterations: 203
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=3, Run=2, Seed=1534698977 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 3
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.348163e+05, ||grad||_infty = 3.04e+03
+Iter    50, f(x) = 9.227377e+05, ||grad||_infty = 3.41e+03
+Iter    75, f(x) = 9.215299e+05, ||grad||_infty = 4.16e+03
+Iter   100, f(x) = 9.200037e+05, ||grad||_infty = 5.13e+03
+Iter   125, f(x) = 9.193839e+05, ||grad||_infty = 6.04e+03
+Iter   150, f(x) = 9.192373e+05, ||grad||_infty = 6.18e+03
+Iter   175, f(x) = 9.192361e+05, ||grad||_infty = 6.18e+03
+Iter   194, f(x) = 9.192360e+05, ||grad||_infty = 6.18e+03
+End Main Loop
+
+Final objective: 9.1924e+05
+Setup time: 0.08 seconds
+Main loop time: 42.81 seconds
+Outer iterations: 194
+Total iterations: 428
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=4, Run=2, Seed=1191514516 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 4
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.283256e+05, ||grad||_infty = 6.21e+03
+Iter    50, f(x) = 9.178940e+05, ||grad||_infty = 4.12e+03
+Iter    75, f(x) = 9.149351e+05, ||grad||_infty = 4.70e+03
+Iter   100, f(x) = 9.145714e+05, ||grad||_infty = 4.28e+03
+Iter   125, f(x) = 9.144922e+05, ||grad||_infty = 4.50e+03
+Iter   150, f(x) = 9.144747e+05, ||grad||_infty = 4.56e+03
+Iter   175, f(x) = 9.144722e+05, ||grad||_infty = 4.57e+03
+Iter   200, f(x) = 9.144707e+05, ||grad||_infty = 4.62e+03
+Iter   225, f(x) = 9.144703e+05, ||grad||_infty = 4.65e+03
+Iter   234, f(x) = 9.144703e+05, ||grad||_infty = 4.64e+03
+End Main Loop
+
+Final objective: 9.1447e+05
+Setup time: 0.05 seconds
+Main loop time: 49.62 seconds
+Outer iterations: 234
+Total iterations: 499
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=5, Run=2, Seed=985939470 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 5
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.352833e+05, ||grad||_infty = 3.09e+03
+Iter    50, f(x) = 9.133899e+05, ||grad||_infty = 3.53e+03
+Iter    75, f(x) = 9.117500e+05, ||grad||_infty = 2.21e+03
+Iter   100, f(x) = 9.115780e+05, ||grad||_infty = 1.61e+03
+Iter   125, f(x) = 9.114849e+05, ||grad||_infty = 3.09e+03
+Iter   150, f(x) = 9.114406e+05, ||grad||_infty = 3.17e+03
+Iter   175, f(x) = 9.114191e+05, ||grad||_infty = 3.48e+03
+Iter   200, f(x) = 9.114076e+05, ||grad||_infty = 3.54e+03
+Iter   225, f(x) = 9.114015e+05, ||grad||_infty = 3.57e+03
+Iter   250, f(x) = 9.113995e+05, ||grad||_infty = 3.63e+03
+Iter   275, f(x) = 9.113987e+05, ||grad||_infty = 3.66e+03
+Iter   300, f(x) = 9.113983e+05, ||grad||_infty = 3.69e+03
+Iter   325, f(x) = 9.113981e+05, ||grad||_infty = 3.69e+03
+Iter   350, f(x) = 9.113978e+05, ||grad||_infty = 3.71e+03
+Iter   373, f(x) = 9.113977e+05, ||grad||_infty = 3.72e+03
+End Main Loop
+
+Final objective: 9.1140e+05
+Setup time: 0.08 seconds
+Main loop time: 92.84 seconds
+Outer iterations: 373
+Total iterations: 821
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=6, Run=2, Seed=1939680514 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 6
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.191172e+05, ||grad||_infty = 4.57e+03
+Iter    50, f(x) = 9.140526e+05, ||grad||_infty = 2.76e+03
+Iter    75, f(x) = 9.119457e+05, ||grad||_infty = 9.52e+02
+Iter   100, f(x) = 9.110144e+05, ||grad||_infty = 7.40e+02
+Iter   125, f(x) = 9.101715e+05, ||grad||_infty = 8.50e+02
+Iter   150, f(x) = 9.099126e+05, ||grad||_infty = 9.60e+02
+Iter   175, f(x) = 9.098250e+05, ||grad||_infty = 9.19e+02
+Iter   200, f(x) = 9.097805e+05, ||grad||_infty = 5.99e+02
+Iter   225, f(x) = 9.097418e+05, ||grad||_infty = 1.04e+03
+Iter   250, f(x) = 9.097156e+05, ||grad||_infty = 5.75e+02
+Iter   275, f(x) = 9.097080e+05, ||grad||_infty = 5.55e+02
+Iter   300, f(x) = 9.097039e+05, ||grad||_infty = 6.22e+02
+Iter   325, f(x) = 9.097008e+05, ||grad||_infty = 5.29e+02
+Iter   350, f(x) = 9.096986e+05, ||grad||_infty = 5.21e+02
+Iter   375, f(x) = 9.096969e+05, ||grad||_infty = 5.13e+02
+Iter   400, f(x) = 9.096962e+05, ||grad||_infty = 5.15e+02
+Iter   425, f(x) = 9.096958e+05, ||grad||_infty = 5.17e+02
+Iter   433, f(x) = 9.096958e+05, ||grad||_infty = 5.17e+02
+End Main Loop
+
+Final objective: 9.0970e+05
+Setup time: 0.07 seconds
+Main loop time: 86.60 seconds
+Outer iterations: 433
+Total iterations: 915
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=7, Run=2, Seed=16853338 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 7
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.177910e+05, ||grad||_infty = 2.64e+03
+Iter    50, f(x) = 9.114474e+05, ||grad||_infty = 2.26e+03
+Iter    75, f(x) = 9.101388e+05, ||grad||_infty = 6.77e+03
+Iter   100, f(x) = 9.094162e+05, ||grad||_infty = 9.18e+02
+Iter   125, f(x) = 9.089192e+05, ||grad||_infty = 6.82e+02
+Iter   150, f(x) = 9.085114e+05, ||grad||_infty = 3.09e+03
+Iter   175, f(x) = 9.082739e+05, ||grad||_infty = 7.83e+02
+Iter   200, f(x) = 9.081745e+05, ||grad||_infty = 1.72e+03
+Iter   225, f(x) = 9.081041e+05, ||grad||_infty = 5.73e+02
+Iter   250, f(x) = 9.080379e+05, ||grad||_infty = 1.86e+03
+Iter   275, f(x) = 9.080002e+05, ||grad||_infty = 5.75e+02
+Iter   300, f(x) = 9.079652e+05, ||grad||_infty = 6.20e+02
+Iter   325, f(x) = 9.079319e+05, ||grad||_infty = 8.08e+02
+Iter   350, f(x) = 9.079061e+05, ||grad||_infty = 9.89e+02
+Iter   375, f(x) = 9.078936e+05, ||grad||_infty = 1.23e+03
+Iter   400, f(x) = 9.078885e+05, ||grad||_infty = 1.35e+03
+Iter   425, f(x) = 9.078869e+05, ||grad||_infty = 1.39e+03
+Iter   435, f(x) = 9.078865e+05, ||grad||_infty = 1.40e+03
+End Main Loop
+
+Final objective: 9.0789e+05
+Setup time: 0.10 seconds
+Main loop time: 120.57 seconds
+Outer iterations: 435
+Total iterations: 936
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=8, Run=2, Seed=195115356 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 8
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.151293e+05, ||grad||_infty = 4.24e+03
+Iter    50, f(x) = 9.120645e+05, ||grad||_infty = 3.43e+03
+Iter    75, f(x) = 9.103594e+05, ||grad||_infty = 3.00e+03
+Iter   100, f(x) = 9.094063e+05, ||grad||_infty = 1.24e+03
+Iter   125, f(x) = 9.087597e+05, ||grad||_infty = 1.20e+04
+Iter   150, f(x) = 9.080110e+05, ||grad||_infty = 9.17e+02
+Iter   175, f(x) = 9.076249e+05, ||grad||_infty = 5.83e+02
+Iter   200, f(x) = 9.074469e+05, ||grad||_infty = 7.19e+02
+Iter   225, f(x) = 9.073626e+05, ||grad||_infty = 5.11e+02
+Iter   250, f(x) = 9.073004e+05, ||grad||_infty = 5.04e+02
+Iter   275, f(x) = 9.072314e+05, ||grad||_infty = 7.02e+02
+Iter   300, f(x) = 9.071667e+05, ||grad||_infty = 4.92e+02
+Iter   325, f(x) = 9.071185e+05, ||grad||_infty = 6.56e+02
+Iter   350, f(x) = 9.071014e+05, ||grad||_infty = 6.16e+02
+Iter   375, f(x) = 9.070938e+05, ||grad||_infty = 7.59e+02
+Iter   400, f(x) = 9.070890e+05, ||grad||_infty = 6.02e+02
+Iter   425, f(x) = 9.070831e+05, ||grad||_infty = 6.51e+02
+Iter   450, f(x) = 9.070784e+05, ||grad||_infty = 6.81e+02
+Iter   475, f(x) = 9.070745e+05, ||grad||_infty = 6.60e+02
+Iter   500, f(x) = 9.070701e+05, ||grad||_infty = 6.30e+02
+End Main Loop
+
+Final objective: 9.0707e+05
+Setup time: 0.07 seconds
+Main loop time: 108.52 seconds
+Outer iterations: 500
+Total iterations: 1050
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=9, Run=2, Seed=1897090026 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 9
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.170202e+05, ||grad||_infty = 5.04e+03
+Iter    50, f(x) = 9.109986e+05, ||grad||_infty = 1.01e+04
+Iter    75, f(x) = 9.078799e+05, ||grad||_infty = 3.95e+03
+Iter   100, f(x) = 9.072605e+05, ||grad||_infty = 2.49e+03
+Iter   125, f(x) = 9.069297e+05, ||grad||_infty = 1.58e+03
+Iter   150, f(x) = 9.067473e+05, ||grad||_infty = 8.89e+02
+Iter   175, f(x) = 9.066189e+05, ||grad||_infty = 1.09e+03
+Iter   200, f(x) = 9.065647e+05, ||grad||_infty = 7.97e+02
+Iter   225, f(x) = 9.065255e+05, ||grad||_infty = 5.53e+02
+Iter   250, f(x) = 9.064743e+05, ||grad||_infty = 6.24e+02
+Iter   275, f(x) = 9.063617e+05, ||grad||_infty = 8.02e+02
+Iter   300, f(x) = 9.062209e+05, ||grad||_infty = 6.77e+02
+Iter   325, f(x) = 9.061315e+05, ||grad||_infty = 6.96e+02
+Iter   350, f(x) = 9.061042e+05, ||grad||_infty = 8.89e+02
+Iter   375, f(x) = 9.060916e+05, ||grad||_infty = 9.35e+02
+Iter   400, f(x) = 9.060860e+05, ||grad||_infty = 9.17e+02
+Iter   425, f(x) = 9.060818e+05, ||grad||_infty = 9.25e+02
+Iter   450, f(x) = 9.060783e+05, ||grad||_infty = 9.72e+02
+Iter   475, f(x) = 9.060754e+05, ||grad||_infty = 9.93e+02
+Iter   500, f(x) = 9.060725e+05, ||grad||_infty = 9.89e+02
+End Main Loop
+
+Final objective: 9.0607e+05
+Setup time: 0.07 seconds
+Main loop time: 111.39 seconds
+Outer iterations: 500
+Total iterations: 1027
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=10, Run=2, Seed=142482551 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 10
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.197695e+05, ||grad||_infty = 2.55e+03
+Iter    50, f(x) = 9.111914e+05, ||grad||_infty = 1.63e+03
+Iter    75, f(x) = 9.082138e+05, ||grad||_infty = 1.36e+03
+Iter   100, f(x) = 9.068014e+05, ||grad||_infty = 9.93e+02
+Iter   125, f(x) = 9.062080e+05, ||grad||_infty = 8.70e+02
+Iter   150, f(x) = 9.058731e+05, ||grad||_infty = 6.59e+02
+Iter   175, f(x) = 9.057247e+05, ||grad||_infty = 5.21e+02
+Iter   200, f(x) = 9.056374e+05, ||grad||_infty = 5.95e+02
+Iter   225, f(x) = 9.055791e+05, ||grad||_infty = 5.43e+02
+Iter   250, f(x) = 9.055259e+05, ||grad||_infty = 5.08e+02
+Iter   275, f(x) = 9.054932e+05, ||grad||_infty = 8.44e+02
+Iter   300, f(x) = 9.054839e+05, ||grad||_infty = 5.15e+02
+Iter   325, f(x) = 9.054747e+05, ||grad||_infty = 5.90e+02
+Iter   350, f(x) = 9.054641e+05, ||grad||_infty = 7.01e+02
+Iter   375, f(x) = 9.054505e+05, ||grad||_infty = 8.10e+02
+Iter   400, f(x) = 9.054404e+05, ||grad||_infty = 8.58e+02
+Iter   425, f(x) = 9.054343e+05, ||grad||_infty = 8.80e+02
+Iter   450, f(x) = 9.054257e+05, ||grad||_infty = 8.61e+02
+Iter   475, f(x) = 9.054225e+05, ||grad||_infty = 8.46e+02
+Iter   500, f(x) = 9.054207e+05, ||grad||_infty = 8.13e+02
+End Main Loop
+
+Final objective: 9.0542e+05
+Setup time: 0.08 seconds
+Main loop time: 116.79 seconds
+Outer iterations: 500
+Total iterations: 1041
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=11, Run=2, Seed=1674035456 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 11
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.150353e+05, ||grad||_infty = 6.62e+03
+Iter    50, f(x) = 9.102929e+05, ||grad||_infty = 2.12e+03
+Iter    75, f(x) = 9.078233e+05, ||grad||_infty = 1.50e+03
+Iter   100, f(x) = 9.064572e+05, ||grad||_infty = 2.07e+03
+Iter   125, f(x) = 9.058991e+05, ||grad||_infty = 1.54e+03
+Iter   150, f(x) = 9.055909e+05, ||grad||_infty = 1.59e+03
+Iter   175, f(x) = 9.054357e+05, ||grad||_infty = 1.52e+03
+Iter   200, f(x) = 9.053306e+05, ||grad||_infty = 1.20e+03
+Iter   225, f(x) = 9.052396e+05, ||grad||_infty = 7.33e+02
+Iter   250, f(x) = 9.051595e+05, ||grad||_infty = 7.32e+02
+Iter   275, f(x) = 9.050975e+05, ||grad||_infty = 7.83e+02
+Iter   300, f(x) = 9.050420e+05, ||grad||_infty = 7.76e+02
+Iter   325, f(x) = 9.049970e+05, ||grad||_infty = 8.05e+02
+Iter   350, f(x) = 9.049594e+05, ||grad||_infty = 8.09e+02
+Iter   375, f(x) = 9.049391e+05, ||grad||_infty = 7.99e+02
+Iter   400, f(x) = 9.049215e+05, ||grad||_infty = 8.11e+02
+Iter   425, f(x) = 9.049072e+05, ||grad||_infty = 8.16e+02
+Iter   450, f(x) = 9.048959e+05, ||grad||_infty = 8.11e+02
+Iter   475, f(x) = 9.048853e+05, ||grad||_infty = 8.15e+02
+Iter   500, f(x) = 9.048726e+05, ||grad||_infty = 8.13e+02
+End Main Loop
+
+Final objective: 9.0487e+05
+Setup time: 0.07 seconds
+Main loop time: 115.82 seconds
+Outer iterations: 500
+Total iterations: 1026
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=12, Run=2, Seed=773980802 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 12
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.142939e+05, ||grad||_infty = 1.26e+03
+Iter    50, f(x) = 9.079620e+05, ||grad||_infty = 1.17e+03
+Iter    75, f(x) = 9.055436e+05, ||grad||_infty = 6.51e+02
+Iter   100, f(x) = 9.050116e+05, ||grad||_infty = 5.77e+02
+Iter   125, f(x) = 9.047685e+05, ||grad||_infty = 5.98e+02
+Iter   150, f(x) = 9.046203e+05, ||grad||_infty = 7.72e+02
+Iter   175, f(x) = 9.044975e+05, ||grad||_infty = 6.02e+02
+Iter   200, f(x) = 9.044185e+05, ||grad||_infty = 4.47e+02
+Iter   225, f(x) = 9.043840e+05, ||grad||_infty = 4.55e+02
+Iter   250, f(x) = 9.043414e+05, ||grad||_infty = 4.17e+02
+Iter   275, f(x) = 9.043145e+05, ||grad||_infty = 4.24e+02
+Iter   300, f(x) = 9.042992e+05, ||grad||_infty = 4.57e+02
+Iter   325, f(x) = 9.042876e+05, ||grad||_infty = 4.51e+02
+Iter   350, f(x) = 9.042814e+05, ||grad||_infty = 4.49e+02
+Iter   375, f(x) = 9.042763e+05, ||grad||_infty = 4.45e+02
+Iter   400, f(x) = 9.042707e+05, ||grad||_infty = 4.46e+02
+Iter   425, f(x) = 9.042638e+05, ||grad||_infty = 4.55e+02
+Iter   450, f(x) = 9.042540e+05, ||grad||_infty = 4.78e+02
+Iter   475, f(x) = 9.042448e+05, ||grad||_infty = 4.88e+02
+Iter   500, f(x) = 9.042364e+05, ||grad||_infty = 4.92e+02
+End Main Loop
+
+Final objective: 9.0424e+05
+Setup time: 0.15 seconds
+Main loop time: 108.92 seconds
+Outer iterations: 500
+Total iterations: 1043
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=1, Run=3, Seed=2019547860 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 1
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.461013e+05, ||grad||_infty = 5.64e+01
+Iter    31, f(x) = 9.461011e+05, ||grad||_infty = 2.59e+01
+End Main Loop
+
+Final objective: 9.4610e+05
+Setup time: 0.08 seconds
+Main loop time: 7.55 seconds
+Outer iterations: 31
+Total iterations: 76
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=2, Run=3, Seed=2051763625 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 2
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.360526e+05, ||grad||_infty = 4.76e+03
+Iter    50, f(x) = 9.284344e+05, ||grad||_infty = 2.33e+03
+Iter    75, f(x) = 9.275427e+05, ||grad||_infty = 5.77e+03
+Iter   100, f(x) = 9.275373e+05, ||grad||_infty = 5.64e+03
+Iter   105, f(x) = 9.275373e+05, ||grad||_infty = 5.64e+03
+End Main Loop
+
+Final objective: 9.2754e+05
+Setup time: 0.07 seconds
+Main loop time: 27.94 seconds
+Outer iterations: 105
+Total iterations: 241
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=3, Run=3, Seed=480438610 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 3
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.309422e+05, ||grad||_infty = 8.10e+03
+Iter    50, f(x) = 9.236743e+05, ||grad||_infty = 3.82e+03
+Iter    75, f(x) = 9.229607e+05, ||grad||_infty = 4.71e+03
+Iter   100, f(x) = 9.199800e+05, ||grad||_infty = 5.96e+03
+Iter   125, f(x) = 9.193541e+05, ||grad||_infty = 5.83e+03
+Iter   150, f(x) = 9.192417e+05, ||grad||_infty = 5.86e+03
+Iter   175, f(x) = 9.192361e+05, ||grad||_infty = 5.89e+03
+Iter   188, f(x) = 9.192360e+05, ||grad||_infty = 5.89e+03
+End Main Loop
+
+Final objective: 9.1924e+05
+Setup time: 0.07 seconds
+Main loop time: 82.19 seconds
+Outer iterations: 188
+Total iterations: 474
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=4, Run=3, Seed=1003444382 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 4
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.229313e+05, ||grad||_infty = 3.34e+03
+Iter    50, f(x) = 9.181698e+05, ||grad||_infty = 5.97e+03
+Iter    75, f(x) = 9.150096e+05, ||grad||_infty = 5.43e+03
+Iter   100, f(x) = 9.145885e+05, ||grad||_infty = 5.21e+03
+Iter   125, f(x) = 9.144972e+05, ||grad||_infty = 4.94e+03
+Iter   150, f(x) = 9.144805e+05, ||grad||_infty = 4.87e+03
+Iter   175, f(x) = 9.144749e+05, ||grad||_infty = 4.85e+03
+Iter   200, f(x) = 9.144715e+05, ||grad||_infty = 4.80e+03
+Iter   225, f(x) = 9.144707e+05, ||grad||_infty = 4.78e+03
+Iter   247, f(x) = 9.144704e+05, ||grad||_infty = 4.76e+03
+End Main Loop
+
+Final objective: 9.1447e+05
+Setup time: 0.13 seconds
+Main loop time: 73.87 seconds
+Outer iterations: 247
+Total iterations: 517
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=5, Run=3, Seed=1874409936 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 5
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.250399e+05, ||grad||_infty = 2.55e+03
+Iter    50, f(x) = 9.157676e+05, ||grad||_infty = 2.62e+03
+Iter    75, f(x) = 9.140413e+05, ||grad||_infty = 3.92e+03
+Iter   100, f(x) = 9.130200e+05, ||grad||_infty = 4.11e+03
+Iter   125, f(x) = 9.126934e+05, ||grad||_infty = 4.00e+03
+Iter   150, f(x) = 9.125931e+05, ||grad||_infty = 3.91e+03
+Iter   175, f(x) = 9.125463e+05, ||grad||_infty = 3.92e+03
+Iter   200, f(x) = 9.125236e+05, ||grad||_infty = 3.93e+03
+Iter   225, f(x) = 9.124984e+05, ||grad||_infty = 3.93e+03
+Iter   250, f(x) = 9.124692e+05, ||grad||_infty = 3.80e+03
+Iter   275, f(x) = 9.123868e+05, ||grad||_infty = 3.61e+03
+Iter   300, f(x) = 9.119876e+05, ||grad||_infty = 3.73e+03
+Iter   325, f(x) = 9.115842e+05, ||grad||_infty = 3.52e+03
+Iter   350, f(x) = 9.114615e+05, ||grad||_infty = 3.28e+03
+Iter   375, f(x) = 9.114262e+05, ||grad||_infty = 3.27e+03
+Iter   400, f(x) = 9.114091e+05, ||grad||_infty = 3.27e+03
+Iter   425, f(x) = 9.114021e+05, ||grad||_infty = 3.34e+03
+Iter   450, f(x) = 9.113992e+05, ||grad||_infty = 3.36e+03
+Iter   475, f(x) = 9.113981e+05, ||grad||_infty = 3.36e+03
+Iter   488, f(x) = 9.113979e+05, ||grad||_infty = 3.36e+03
+End Main Loop
+
+Final objective: 9.1140e+05
+Setup time: 0.10 seconds
+Main loop time: 148.13 seconds
+Outer iterations: 488
+Total iterations: 1039
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=6, Run=3, Seed=1536950948 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 6
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.179021e+05, ||grad||_infty = 3.61e+03
+Iter    50, f(x) = 9.130136e+05, ||grad||_infty = 3.35e+03
+Iter    75, f(x) = 9.113100e+05, ||grad||_infty = 3.01e+03
+Iter   100, f(x) = 9.105141e+05, ||grad||_infty = 3.11e+03
+Iter   125, f(x) = 9.099234e+05, ||grad||_infty = 2.79e+03
+Iter   150, f(x) = 9.097082e+05, ||grad||_infty = 2.72e+03
+Iter   175, f(x) = 9.095959e+05, ||grad||_infty = 2.98e+03
+Iter   200, f(x) = 9.095439e+05, ||grad||_infty = 3.17e+03
+Iter   225, f(x) = 9.095232e+05, ||grad||_infty = 3.25e+03
+Iter   250, f(x) = 9.095109e+05, ||grad||_infty = 3.30e+03
+Iter   275, f(x) = 9.095031e+05, ||grad||_infty = 3.27e+03
+Iter   300, f(x) = 9.094974e+05, ||grad||_infty = 3.16e+03
+Iter   325, f(x) = 9.094933e+05, ||grad||_infty = 2.93e+03
+Iter   344, f(x) = 9.094918e+05, ||grad||_infty = 2.86e+03
+End Main Loop
+
+Final objective: 9.0949e+05
+Setup time: 0.10 seconds
+Main loop time: 108.09 seconds
+Outer iterations: 344
+Total iterations: 757
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=7, Run=3, Seed=123913390 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 7
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.143107e+05, ||grad||_infty = 4.18e+03
+Iter    50, f(x) = 9.101774e+05, ||grad||_infty = 2.42e+03
+Iter    75, f(x) = 9.089602e+05, ||grad||_infty = 1.40e+03
+Iter   100, f(x) = 9.084985e+05, ||grad||_infty = 1.24e+03
+Iter   125, f(x) = 9.081207e+05, ||grad||_infty = 1.20e+03
+Iter   150, f(x) = 9.080227e+05, ||grad||_infty = 2.10e+03
+Iter   175, f(x) = 9.079858e+05, ||grad||_infty = 7.46e+02
+Iter   200, f(x) = 9.079578e+05, ||grad||_infty = 7.22e+02
+Iter   225, f(x) = 9.079344e+05, ||grad||_infty = 8.71e+02
+Iter   250, f(x) = 9.079127e+05, ||grad||_infty = 1.00e+03
+Iter   275, f(x) = 9.078984e+05, ||grad||_infty = 1.21e+03
+Iter   300, f(x) = 9.078905e+05, ||grad||_infty = 1.26e+03
+Iter   325, f(x) = 9.078875e+05, ||grad||_infty = 1.33e+03
+Iter   350, f(x) = 9.078864e+05, ||grad||_infty = 1.36e+03
+Iter   375, f(x) = 9.078858e+05, ||grad||_infty = 1.41e+03
+Iter   400, f(x) = 9.078856e+05, ||grad||_infty = 1.45e+03
+Iter   425, f(x) = 9.078854e+05, ||grad||_infty = 1.48e+03
+Iter   430, f(x) = 9.078854e+05, ||grad||_infty = 1.48e+03
+End Main Loop
+
+Final objective: 9.0789e+05
+Setup time: 0.09 seconds
+Main loop time: 114.04 seconds
+Outer iterations: 430
+Total iterations: 915
+L-BFGS-B Exit message: CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH.
+
+*** Rank=8, Run=3, Seed=168135032 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 8
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.159037e+05, ||grad||_infty = 2.25e+04
+Iter    50, f(x) = 9.102628e+05, ||grad||_infty = 1.04e+03
+Iter    75, f(x) = 9.086542e+05, ||grad||_infty = 4.31e+04
+Iter   100, f(x) = 9.079346e+05, ||grad||_infty = 6.82e+02
+Iter   125, f(x) = 9.076522e+05, ||grad||_infty = 6.48e+02
+Iter   150, f(x) = 9.074750e+05, ||grad||_infty = 8.08e+02
+Iter   175, f(x) = 9.072713e+05, ||grad||_infty = 1.07e+03
+Iter   200, f(x) = 9.071411e+05, ||grad||_infty = 7.61e+02
+Iter   225, f(x) = 9.070578e+05, ||grad||_infty = 1.21e+03
+Iter   250, f(x) = 9.069735e+05, ||grad||_infty = 1.36e+03
+Iter   275, f(x) = 9.069192e+05, ||grad||_infty = 1.25e+03
+Iter   300, f(x) = 9.069010e+05, ||grad||_infty = 1.29e+03
+Iter   325, f(x) = 9.068937e+05, ||grad||_infty = 1.30e+03
+Iter   350, f(x) = 9.068887e+05, ||grad||_infty = 1.26e+03
+Iter   375, f(x) = 9.068856e+05, ||grad||_infty = 1.28e+03
+Iter   400, f(x) = 9.068808e+05, ||grad||_infty = 1.26e+03
+Iter   425, f(x) = 9.068764e+05, ||grad||_infty = 1.27e+03
+Iter   450, f(x) = 9.068749e+05, ||grad||_infty = 1.26e+03
+Iter   475, f(x) = 9.068745e+05, ||grad||_infty = 1.27e+03
+Iter   500, f(x) = 9.068743e+05, ||grad||_infty = 1.28e+03
+End Main Loop
+
+Final objective: 9.0687e+05
+Setup time: 0.10 seconds
+Main loop time: 132.15 seconds
+Outer iterations: 500
+Total iterations: 1076
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=9, Run=3, Seed=1322232542 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 9
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.194820e+05, ||grad||_infty = 2.44e+03
+Iter    50, f(x) = 9.109017e+05, ||grad||_infty = 1.60e+03
+Iter    75, f(x) = 9.087596e+05, ||grad||_infty = 1.61e+03
+Iter   100, f(x) = 9.076243e+05, ||grad||_infty = 1.01e+03
+Iter   125, f(x) = 9.070241e+05, ||grad||_infty = 9.26e+02
+Iter   150, f(x) = 9.067727e+05, ||grad||_infty = 1.44e+03
+Iter   175, f(x) = 9.065952e+05, ||grad||_infty = 1.74e+03
+Iter   200, f(x) = 9.064231e+05, ||grad||_infty = 2.01e+03
+Iter   225, f(x) = 9.063546e+05, ||grad||_infty = 1.55e+03
+Iter   250, f(x) = 9.063016e+05, ||grad||_infty = 9.18e+02
+Iter   275, f(x) = 9.062400e+05, ||grad||_infty = 6.58e+02
+Iter   300, f(x) = 9.061798e+05, ||grad||_infty = 6.46e+02
+Iter   325, f(x) = 9.061383e+05, ||grad||_infty = 7.79e+02
+Iter   350, f(x) = 9.061110e+05, ||grad||_infty = 6.33e+02
+Iter   375, f(x) = 9.060955e+05, ||grad||_infty = 6.22e+02
+Iter   400, f(x) = 9.060884e+05, ||grad||_infty = 6.18e+02
+Iter   425, f(x) = 9.060823e+05, ||grad||_infty = 6.16e+02
+Iter   450, f(x) = 9.060797e+05, ||grad||_infty = 6.15e+02
+Iter   475, f(x) = 9.060784e+05, ||grad||_infty = 6.12e+02
+Iter   500, f(x) = 9.060775e+05, ||grad||_infty = 6.13e+02
+End Main Loop
+
+Final objective: 9.0608e+05
+Setup time: 0.08 seconds
+Main loop time: 142.81 seconds
+Outer iterations: 500
+Total iterations: 1068
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=10, Run=3, Seed=1995760646 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 10
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.127685e+05, ||grad||_infty = 3.18e+03
+Iter    50, f(x) = 9.089102e+05, ||grad||_infty = 2.16e+03
+Iter    75, f(x) = 9.072840e+05, ||grad||_infty = 2.85e+03
+Iter   100, f(x) = 9.065682e+05, ||grad||_infty = 7.75e+02
+Iter   125, f(x) = 9.062756e+05, ||grad||_infty = 1.36e+03
+Iter   150, f(x) = 9.061138e+05, ||grad||_infty = 5.18e+02
+Iter   175, f(x) = 9.059831e+05, ||grad||_infty = 5.38e+02
+Iter   200, f(x) = 9.058338e+05, ||grad||_infty = 1.33e+03
+Iter   225, f(x) = 9.057022e+05, ||grad||_infty = 3.06e+03
+Iter   250, f(x) = 9.055777e+05, ||grad||_infty = 5.24e+02
+Iter   275, f(x) = 9.055038e+05, ||grad||_infty = 6.99e+02
+Iter   300, f(x) = 9.054606e+05, ||grad||_infty = 1.13e+03
+Iter   325, f(x) = 9.054313e+05, ||grad||_infty = 1.11e+03
+Iter   350, f(x) = 9.054146e+05, ||grad||_infty = 9.99e+02
+Iter   375, f(x) = 9.054056e+05, ||grad||_infty = 9.70e+02
+Iter   400, f(x) = 9.053991e+05, ||grad||_infty = 9.40e+02
+Iter   425, f(x) = 9.053931e+05, ||grad||_infty = 8.74e+02
+Iter   450, f(x) = 9.053892e+05, ||grad||_infty = 9.69e+02
+Iter   475, f(x) = 9.053871e+05, ||grad||_infty = 9.82e+02
+Iter   500, f(x) = 9.053857e+05, ||grad||_infty = 1.01e+03
+End Main Loop
+
+Final objective: 9.0539e+05
+Setup time: 0.14 seconds
+Main loop time: 148.99 seconds
+Outer iterations: 500
+Total iterations: 1058
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=11, Run=3, Seed=1435778988 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 11
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.127481e+05, ||grad||_infty = 1.86e+03
+Iter    50, f(x) = 9.073797e+05, ||grad||_infty = 1.92e+03
+Iter    75, f(x) = 9.064844e+05, ||grad||_infty = 1.66e+03
+Positive dir derivative in projection 
+Using the backtracking step
+Iter   100, f(x) = 9.060944e+05, ||grad||_infty = 1.09e+04
+Iter   125, f(x) = 9.057852e+05, ||grad||_infty = 1.30e+03
+Iter   150, f(x) = 9.055695e+05, ||grad||_infty = 1.30e+03
+Iter   175, f(x) = 9.054316e+05, ||grad||_infty = 7.41e+03
+Iter   200, f(x) = 9.053341e+05, ||grad||_infty = 1.51e+03
+Iter   225, f(x) = 9.052473e+05, ||grad||_infty = 1.61e+03
+Iter   250, f(x) = 9.051780e+05, ||grad||_infty = 1.63e+03
+Iter   275, f(x) = 9.051175e+05, ||grad||_infty = 1.51e+03
+Iter   300, f(x) = 9.050656e+05, ||grad||_infty = 1.60e+03
+Iter   325, f(x) = 9.050134e+05, ||grad||_infty = 1.56e+03
+Iter   350, f(x) = 9.049786e+05, ||grad||_infty = 1.46e+03
+Iter   375, f(x) = 9.049513e+05, ||grad||_infty = 1.27e+03
+Iter   400, f(x) = 9.049149e+05, ||grad||_infty = 8.84e+02
+Iter   425, f(x) = 9.048700e+05, ||grad||_infty = 7.01e+02
+Iter   450, f(x) = 9.048129e+05, ||grad||_infty = 6.64e+02
+Iter   475, f(x) = 9.047922e+05, ||grad||_infty = 5.97e+02
+Iter   500, f(x) = 9.047709e+05, ||grad||_infty = 5.85e+02
+End Main Loop
+
+Final objective: 9.0477e+05
+Setup time: 0.09 seconds
+Main loop time: 122.12 seconds
+Outer iterations: 500
+Total iterations: 1054
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG
+
+*** Rank=12, Run=3, Seed=1322016384 ***
+
+
+GCP-OPT-LBFGSB (Generalized CP Tensor Decomposition)
+
+Tensor size: 365 x 24 x 77 x 12 (8094240 total entries)
+GCP rank: 12
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: lbfgsb
+Max iterations: 500
+Projected gradient tolerance: 0.8094
+
+Begin Main loop
+Iter    25, f(x) = 9.144170e+05, ||grad||_infty = 1.10e+03
+Iter    50, f(x) = 9.072693e+05, ||grad||_infty = 1.12e+03
+Iter    75, f(x) = 9.061059e+05, ||grad||_infty = 8.77e+02
+Iter   100, f(x) = 9.055461e+05, ||grad||_infty = 8.42e+02
+Iter   125, f(x) = 9.051267e+05, ||grad||_infty = 8.05e+02
+Iter   150, f(x) = 9.049413e+05, ||grad||_infty = 2.64e+03
+Iter   175, f(x) = 9.048403e+05, ||grad||_infty = 7.90e+02
+Iter   200, f(x) = 9.047280e+05, ||grad||_infty = 5.83e+02
+Iter   225, f(x) = 9.046159e+05, ||grad||_infty = 9.74e+02
+Iter   250, f(x) = 9.045281e+05, ||grad||_infty = 5.55e+02
+Iter   275, f(x) = 9.044732e+05, ||grad||_infty = 5.05e+02
+Iter   300, f(x) = 9.044355e+05, ||grad||_infty = 5.00e+02
+Iter   325, f(x) = 9.044089e+05, ||grad||_infty = 4.59e+02
+Iter   350, f(x) = 9.043877e+05, ||grad||_infty = 4.92e+02
+Iter   375, f(x) = 9.043615e+05, ||grad||_infty = 5.20e+02
+Iter   400, f(x) = 9.043373e+05, ||grad||_infty = 4.99e+02
+Iter   425, f(x) = 9.043141e+05, ||grad||_infty = 4.81e+02
+Iter   450, f(x) = 9.042983e+05, ||grad||_infty = 5.47e+02
+Iter   475, f(x) = 9.042865e+05, ||grad||_infty = 5.09e+02
+Iter   500, f(x) = 9.042665e+05, ||grad||_infty = 5.18e+02
+End Main Loop
+
+Final objective: 9.0427e+05
+Setup time: 0.09 seconds
+Main loop time: 137.75 seconds
+Outer iterations: 500
+Total iterations: 1051
+L-BFGS-B Exit message: UNRECOGNIZED EXIT FLAG

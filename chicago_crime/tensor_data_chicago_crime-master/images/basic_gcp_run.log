@@ -1,0 +1,42 @@
+
+GCP-OPT-ADAM (Generalized CP Tensor Decomposition)
+
+Tensor size: 7484 x 24 x 77 x 22 (304269504 total entries)
+Sparse tensor: 6377326 (2.1%) Nonzeros and 297892178 (97.90%) Zeros
+GCP rank: 10
+Generalized function Type: count
+Objective function: @(x,m)m-x.*log(m+1e-10)
+Gradient function: @(x,m)1-x./(m+1e-10)
+Lower bound of factor matrices: 0
+Optimization method: adam
+Max iterations (epochs): 1000
+Iterations per epoch: 1000
+Learning rate / decay / maxfails: 0.001 0.1 1
+Function Sampler: stratified with 25000 nonzero and 25000 zero samples
+Gradient Sampler: stratified with 6377 nonzero and 6377 zero samples
+
+Begin Main loop
+Initial f-est: 6.134733e+07
+Epoch  1: f-est = 2.634182e+07, step = 0.001
+Epoch  2: f-est = 2.580401e+07, step = 0.001
+Epoch  3: f-est = 2.563328e+07, step = 0.001
+Epoch  4: f-est = 2.539133e+07, step = 0.001
+Epoch  5: f-est = 2.507775e+07, step = 0.001
+Epoch  6: f-est = 2.495352e+07, step = 0.001
+Epoch  7: f-est = 2.489074e+07, step = 0.001
+Epoch  8: f-est = 2.485196e+07, step = 0.001
+Epoch  9: f-est = 2.485826e+07, step = 0.001, nfails = 1 (resetting to solution from last epoch)
+Epoch 10: f-est = 2.481147e+07, step = 0.0001
+Epoch 11: f-est = 2.479003e+07, step = 0.0001
+Epoch 12: f-est = 2.478405e+07, step = 0.0001
+Epoch 13: f-est = 2.477400e+07, step = 0.0001
+Epoch 14: f-est = 2.476071e+07, step = 0.0001
+Epoch 15: f-est = 2.475143e+07, step = 0.0001
+Epoch 16: f-est = 2.474807e+07, step = 0.0001
+Epoch 17: f-est = 2.475029e+07, step = 0.0001, nfails = 2 (resetting to solution from last epoch)
+End Main Loop
+
+Final f-est: 2.4748e+07
+Setup time: 0.37 seconds
+Main loop time: 133.36 seconds
+Total iterations: 17000
