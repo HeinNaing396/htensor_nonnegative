@@ -77,4 +77,5 @@ function plot_mat(JR, varargin)
     end     
     height = width / ratio;
     set(gcf, 'Units', 'Inches', 'Position', [1 1 width height]);
+    set(gca, 'FontSize', 16)
 end 

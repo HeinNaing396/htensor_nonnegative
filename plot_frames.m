@@ -27,6 +27,8 @@ function plot_frames(frame, type, varargin)
 %       true. 
 %       'yes_colorbar' - If true, each subplot is displayed with a
 %       colorbar. Else, no colorbar is displayed. The default is true. 
+%       'XMinorTick'- Add minor ticks along x-axis. The default is false. 
+%       'YMinorTick'- Add minor ticks along y-axis. The default is false. 
 %
 %   See also FRAMEU 
 
@@ -49,9 +51,11 @@ function plot_frames(frame, type, varargin)
     addParameter(p, 'ylabel',[]); 
     addParameter(p, 'subtitles',[]); 
     addParameter(p, 'ratio',16/9); %W/H
-    addParameter(p, 'width',12); 
+    addParameter(p, 'width',6); 
     addParameter(p, 'fixed', true); 
     addParameter(p, 'yes_colorbar',true);
+    addParameter(p, 'XMinorTick',false); 
+    addParameter(p, 'YMinorTick',false); 
 
     parse(p, varargin{:});
 
@@ -72,6 +76,8 @@ function plot_frames(frame, type, varargin)
     width = p.Results.width; 
     fixed = p.Results.fixed; 
     yes_colorbar = p.Results.yes_colorbar; 
+    x_minor_tick = p.Results.XMinorTick;
+    y_minor_tick = p.Results.YMinorTick; 
     
     % Remaining args go to plot functions
     plotArgs = p.Unmatched;
@@ -80,59 +86,47 @@ function plot_frames(frame, type, varargin)
 
     figure; 
     for i = 1:sz(end)
-        subplot(sp_sz(1), sp_sz(2), i); 
-
+        ax = subplot(sp_sz(1), sp_sz(2), i);  % store axes
+    
         if strcmp(type, 'bar')
-            bar(x, frame(:,i), plotArgs{:})
+            bar(ax, x, frame(:,i), plotArgs{:})
         elseif strcmp(type, 'line')
-            plot(x, frame(:,i), plotArgs{:})
+            plot(ax, x, frame(:,i), plotArgs{:})
         elseif strcmp(type, '2d')
-            imagesc(cols, rows, frame(:,:,i), plotArgs{:})
+            imagesc(ax, cols, rows, frame(:,:,i), plotArgs{:})
             if yes_colorbar
-                colorbar;
+                colorbar(ax);   % attach to correct axes
             end
         else
             error('Invalid type'); 
         end 
-
-        % Adjustments after plotting
-        if ~isempty(x_limits)
-            xlim(x_limits);
+    
+        % ---- your settings (same) ----
+        if ~isempty(x_limits), xlim(ax, x_limits); end
+        if ~isempty(y_limits), ylim(ax, y_limits); end
+        if ~isempty(xtick), xticks(ax, xtick); end
+        if ~isempty(ytick), yticks(ax, ytick); end
+        if ~isempty(xticklabel), xticklabels(ax, xticklabel); end
+        if ~isempty(yticklabel), yticklabels(ax, yticklabel); end
+        if ~isempty(xlab), xlabel(ax, xlab); end
+        if ~isempty(ylab), ylabel(ax, ylab); end
+    
+        % minor ticks (reliable now)
+        if x_minor_tick
+            ax.XMinorTick = 'on';
         end
-        if ~isempty(y_limits)
-            ylim(y_limits);
-        end
-
-        if ~isempty(xtick)
-            xticks(xtick); 
+        if y_minor_tick
+            ax.YMinorTick = 'on';
         end 
-        if ~isempty(ytick)
-            yticks(ytick); 
-        end 
-
-        if ~isempty(xticklabel)
-            xticklabels(xticklabel); 
-        end 
-        if ~isempty(yticklabel)
-            yticklabels(yticklabel); 
-        end 
-
-        if ~isempty(xlab)
-            xlabel(xlab); 
-        end 
-        if ~isempty(ylab)
-            ylabel(ylab); 
-        end 
-
+    
         if ~isempty(subtitles)
             if isscalar(subtitles)
-                titles(subtitles); 
+                title(ax, subtitles); 
             else 
-                title(subtitles(i)); 
+                title(ax, subtitles(i)); 
             end 
         end 
     end
-    
     if fixed
         height = width / ratio;
         set(gcf, 'Units', 'Inches', 'Position', [1 1 width height]);
